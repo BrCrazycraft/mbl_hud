@@ -55,7 +55,7 @@ class _Roulette extends State<Roulette> {
         currentIndex = widget.children.length-1;
       }
     });
-    controller.animateToPage(currentIndex, duration: Duration(seconds: 1), curve: Curves.easeIn);
+    controller.animateToPage(currentIndex, duration: Duration(seconds: 1), curve: Curves.decelerate);
   }
 
   @override

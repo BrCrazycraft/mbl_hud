@@ -15,11 +15,14 @@ class MblExempleHomeDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Color.fromRGBO(0,0,0, 0.75),
-      child: Column(
-        children: [
-          Text(title, style: TextStyle(color: Colors.white, fontSize: 32),),
-          Expanded(child: Text(description, style: TextStyle(color: Colors.white), textAlign: TextAlign.justify,))
-        ],
+      child: Container(
+        margin: EdgeInsetsDirectional.symmetric(horizontal: 32),
+        child: Column(
+          children: [
+            Text(title, style: TextStyle(color: Colors.white, fontSize: 32), ),
+            Expanded(child: Text(description, style: TextStyle(color: Colors.white), textAlign: TextAlign.justify,))
+          ],
+        ),
       ),
     );
   }

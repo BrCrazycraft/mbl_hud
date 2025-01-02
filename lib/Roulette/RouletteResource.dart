@@ -47,7 +47,7 @@ class _RouletteResource extends State<RouletteResource> {
   @override
   Widget build(BuildContext context) {
     List<Widget> interface = [
-      playVideo?widget.videoContent.build():widget.videoThumbnail
+       playVideo?widget.videoContent.build():widget.videoThumbnail,
     ];
 
     if (visibleDetails) {
